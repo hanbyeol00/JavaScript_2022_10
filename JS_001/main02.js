@@ -10,7 +10,8 @@ btnSave.addEventListener("click", () => {
   // input#name 에 입력된 text(value 속성값)를
   // txtName 변수에 보관하기
   const txtName = inputName.value;
-  // 이름을 문자열과 txtName 에 보관된 tet를
+  // 이름을 문자열과 txtName 에 보관된 text 를 연결하여
+  // 알림으로 띄우기
   alert("이름은" + txtName);
 
   const txtTel = inputTel.value;
