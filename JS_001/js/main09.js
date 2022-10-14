@@ -10,4 +10,11 @@ btncacl?.addEventListener("click", () => {
 
   spanSum.innerText = Number(num1) + Number(num2);
   // innerText 를 이용해 값 구하기
+  /**
+   * IDE : 통합개발환경
+   * Intergrated, Development, Environment
+   * 소스코드작성, 컴파일, 테스트, 배포 등을 하나의 환경에서
+   * 처리할 수 있도록 만들어진 개발 도구
+   * ex) vscode, eclipse
+   */
 });
