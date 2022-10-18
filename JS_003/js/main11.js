@@ -1,6 +1,7 @@
-for (let i = 2; i < 10; i++) {
-  for (let x = 1; x < 10; x++) {
-    console.log(i * x);
+for (let i = 0; i < 5; i++) {
+  for (let x = 5; x > i; x--) {
+    document.write("*");
   }
+  document.write("<br/>");
 }
 console.log("");
