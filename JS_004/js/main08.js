@@ -13,8 +13,6 @@ const userpswd = document.querySelector("#password");
 const repswd = document.querySelector("#re_password");
 
 btnSubmit.addEventListener("click", (data) => {
-  const target = data.target;
-  const text = target.innerText;
   const txtUser = userName.value;
   const txtPswd = userpswd.value;
   const txtRepswd = repswd.value;
@@ -24,6 +22,9 @@ btnSubmit.addEventListener("click", (data) => {
     userName.focus();
   } else if (!txtPswd) {
     alert("비밀번호를 입력하세요");
+    userpswd.focus();
+  } else if(txtPswd != txtRepswd){
+    alert("비밀번호와 비밀번호확인이 틀립니다")
     userpswd.focus();
   }
 });
