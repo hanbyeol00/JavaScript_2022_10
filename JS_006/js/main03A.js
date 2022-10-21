@@ -3,12 +3,22 @@ const tbodyScore = document.querySelector("tbody.score");
 const btnAdd = document.querySelector("button.add");
 
 const scoreCheck = () => {
-  for (let i = 2; i < inputs.length; i++) {
+  for (let i = 0; i < inputs.length; i++) {
     const input = inputs[i];
     const holderText = inputs[i].placeholder;
     if (!input.value) {
-      alert(`${holderText}점수를 입력하세요`);
-    } else if (Number(input.value) < 0 || Number(input.value) > 100) {
+      alert(`${holderText}를 입력하세요`);
+      input.value = "";
+      input.focus();
+      return false;
+    }
+    return true;
+  }
+
+  for (let i = 2; i < inputs.length; i++) {
+    const input = inputs[i];
+    const holderText = inputs[i].placeholder;
+    if (Number(input.value) < 0 || Number(input.value) > 100) {
       alert(`${holderText}점수는 0 ~ 100 까지 입력하세요`);
     } else if (!Number(input.value)) {
       alert(`${holderText}점수는 숫자로만 입력해주세요`);
