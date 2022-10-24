@@ -93,7 +93,7 @@ const addrInput = () => {
   td.textContent = sum;
   tr.appendChild(td);
   let tt = document.createElement("TD");
-  tt.textContent = Math.round(sum / 3);
+  tt.textContent = Math.floor(sum / 3);
   tr.appendChild(tt);
 
   tbodyAddr.appendChild(tr);
@@ -106,10 +106,6 @@ const addrInput = () => {
     math: inputs[4].value,
     sum: sum,
     dvs: sum / 3,
-    // sum:
-    //   Number(inputs[2].value) +
-    //   Number(inputs[3].value) +
-    //   Number(inputs[4].value),
   };
   addrList.push(addr);
 
@@ -126,3 +122,19 @@ btnAdd?.addEventListener("click", () => {
     addrInput();
   }
 });
+
+/**
+ * 변수 scope
+ * - 변수, 객체, 함수 등의
+ *  선언된 위치에 따라 변수에 접근(읽기, 쓰기, 저장)이 제한적이다
+ * - for() 명령문에 선언된 변수 i와
+ *  for() 블럭({}) 에 선언된 sum 은
+ *  for() 명령문({})이 끝나면
+ *  소멸되어 사용할 수 없다
+ *
+ * - for() 명령문 앞에 선언된 sum 은
+ *  for() 명령이 종료 되어도
+ *  값을 유지 하고 있다
+ *  console.log(sum)에 의해
+ *  값 확인 가능
+ */
