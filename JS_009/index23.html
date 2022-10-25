@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto;
+      }
+      section.main div {
+        border: 1px solid #bbb;
+        margin: 5px;
+        padding: 1em;
+      }
+      section:nth-of-type(1) {
+        border: 1px solid blue;
+      }
+      section:nth-of-type(2) {
+        border: 1px solid green;
+      }
+      section:nth-of-type(3) {
+        border: 1px solid orange;
+      }
+      div.btn_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main"></section>
+    <section class="main"></section>
+    <section class="main"></section>
+    <div class="btn_box">
+      <button>새로고침</button>
+    </div>
+  </body>
+  <script src="js/main23.js"></script>
+</html>
