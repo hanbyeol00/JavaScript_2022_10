@@ -70,10 +70,9 @@ const addrCheck = () => {
     } else if (!Number(input.value)) {
       alert(`${holderText}점수는 숫자로만 입력해주세요`);
     } else {
-      continue;
+      input.focus();
+      return false;
     }
-    input.focus();
-    return false;
   }
   return true;
 };

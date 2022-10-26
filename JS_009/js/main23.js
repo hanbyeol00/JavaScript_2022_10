@@ -52,3 +52,12 @@ const init = () => {
 init();
 
 btnRefresh?.addEventListener("click", init);
+/**
+ * 변수, 객체, 함수 및 속성 이름 작명 코딩 패턴 : 이름작성 case 패턴
+ * 1. 표준(lower)carmel case : myName
+ * 2. Upper Carmel case : serviceV1, ScoreService. StudentService
+ * 3. kebab case : my-name, ham-button, top-menu
+ * 4. 헝가리 표기법 : intKor, strNation, bYes
+ * 5. snack case (Underscore notation) : my_name
+ * 6. Upper Case format(시스템, 전역변수 사용) : MY_PROJECT_USER_NAME
+ */
