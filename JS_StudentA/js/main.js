@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   // 배열에 저장된 데이터를 table 에 보여주기
   const printStudent = () => {
+    // 계속해서 데이터가 무작정 추가되는 것을 방지하기
     tbodyStInfo.textContent = "";
     studentList.forEach((학생) => {
       // 학생 객체의 요소들의 데이터만 추출하여
