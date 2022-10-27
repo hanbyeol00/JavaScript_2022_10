@@ -44,3 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(배열);
   console.log(새배열);
 });
+/**
+ * for(초기화코드; 비교연산문 ; 변수변환) {  }
+ * for(index = 0 ; index < 10 ; index ++ ) { }
+ * 1. 초기화 코드는 for() 명령이 실행될때 최초 한번만 실행
+ *  보통 변수를 초기화, clear 하는 코드 실행
+ * 2. 비교연산문의 연산 결과는 true 일때 블럭( {} )코드 실행
+ * 3. 변수변환 연산에 의해 비교연산분에서 사용할 변수 값을
+ *  증, 감 연산하는 코드
+ */
